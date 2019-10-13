@@ -29,5 +29,4 @@ function translate(var sentence) {
     for (var word : sentence) {
 
     }
-
 }
