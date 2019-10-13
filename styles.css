@@ -15,6 +15,15 @@ h1 {
   font-size: 100px;
 }
 
+p, li {
+  font-family: "Gochi Hand";
+}
+
+ul li {
+  list-style: none;
+  padding: none;
+}
+
 #output {
-  display: none;
+  /* display: none; */
 }
