@@ -3,16 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Gen-Z Lingo Translator</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="js/translate.js"></script>
   </head>
   <body>
     <header>
       <h1>Generation Z Translator</h1>
     </header>
-    <section>
+    <section id="input">
       <h2>Enter Phrase:</h2>
       <input type="text" name="phrase"><br>
-      <input type="submit" value="Enter">
+      <!-- <input type="submit" value="Enter"> -->
+      <input type="button" value="Enter">
+    </section>
+    <section id="output">
+      <h2>You said: </h2>
+      <p><!--what they entered--></p>
+      <h2>You meant: </h2>
+      <p><!--translation--></p>
+      <h2>Possible lingo found: </h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <!--...-->
+        </ul>
     </section>
   </body>
+  <footer>
+  </footer>
 </html>

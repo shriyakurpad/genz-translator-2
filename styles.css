@@ -1,0 +1,9 @@
+body {
+  margin: auto;
+  text-align: center;
+  
+}
+
+#output {
+  display: none;
+}
