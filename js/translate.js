@@ -1,9 +1,6 @@
 
-let button = document.getElementById("button");
-button.addEventListener("click", clickedButton);
+let btn = document.getElementById("button");
 
-
-//query the databsae
-function clickedButton() {
+btn.onclick = function() {
 
 }
