@@ -19,3 +19,15 @@ function testDB(){
   });
 
 }
+
+// check the input with the database
+var button = document.querySelector('input');
+button.addEventListener('click', translate(sentence));
+
+function translate(var sentence) {
+    var result = "";
+    for (var word : sentence) {
+
+    }
+
+}
