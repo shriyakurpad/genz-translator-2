@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina|Gochi+Hand|Sniglet&display=swap');
+
 body {
   margin: auto;
   text-align: center;
-  
+  font-family: "Sniglet", sans-serif;
+  font-size: 20px;
+  width: 80%;
+  background: linear-gradient(skyblue, darkorange);
+  color: white;
+}
+
+h1 {
+  font-family: "Baloo Bhaina";
+  font-size: 100px;
 }
 
 #output {
