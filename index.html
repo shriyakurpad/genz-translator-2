@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Gen-Z Lingo Translator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="js/translate.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+
   </head>
   <body>
     <header>
@@ -14,7 +16,8 @@
       <h2>Enter Phrase:</h2>
       <input id="textinput" type="text" name="phrase"><br>
       <!-- <input type="submit" value="Enter"> -->
-      <input type="button" value="Enter">
+      <!--<input type="button" value="Enter" id="submit"> -->
+      <button id="my-btn">Click Me</button>
     </section>
     <section id="output">
       <h2>You said: </h2>
@@ -29,6 +32,7 @@
           <!--...-->
         </ul>
     </section>
+    <script src="js/translate.js"></script>
   </body>
   <footer>
   </footer>
