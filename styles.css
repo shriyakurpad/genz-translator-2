@@ -6,13 +6,15 @@ body {
   font-family: "Sniglet", sans-serif;
   font-size: 20px;
   width: 80%;
-  background: linear-gradient(skyblue, darkorange);
+  /* background: linear-gradient(skyblue, indianred); */
+  background-color: skyblue;
   color: white;
 }
 
 h1 {
   font-family: "Baloo Bhaina";
   font-size: 100px;
+  text-shadow: black 3px 3px 3px;
 }
 
 p, li {
