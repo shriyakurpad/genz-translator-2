@@ -24,23 +24,41 @@ function testDB(){
 
 function translate() {
     let sentence = document.getElementById('textinput').value;
+    let  beforeText = "You said: " + sentence;
+    document.getElementById('before').innerHTML = beforeText;
+    let lingoArray = [];
     // console.log(sentence)
     // let sentenceArray = sentence.split(" ");
     // let word = "";
     // console.log(sentence);
     let leadsRef = dict.ref('lingo');
+    let result = "";
     leadsRef.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
           let key = childSnapshot.key; // "ada"
-          let lingo = snapshot.child("lingo/"+key).key;
+          let lingo = snapshot.child("lingo/" + key).key;
           let word = childSnapshot.val();
           // console.log(lingo);
-
            if (sentence.includes(lingo)) {
-               console.log("key:" + lingo + " val:" + word);
+               // console.log("key:" + lingo + " val:" + word);
+               lingoArray.push(lingo);
+               let wordArray = word.split("/");
+               // console.log(wordArray);
+               if (wordArray.length > 1) {
+                 let index = Math.round(Math.random() * (wordArray.length));
+                 // console.log("index: " + index);
+                 word = wordArray[index];
+               }
+               result = sentence.replace(lingo, word);
+               sentence = sentence.replace(lingo, word);
            }
-
         });
+        console.log(result);
+        let afterText = "You meant: " + result;
+        document.getElementById('after').innerHTML = afterText;
+        document.getElementById('lingoList').innerHTML = "Possible lingo found: " + lingoArray;
+        result = "";
+        lingoArray = [];
     });
 
 
